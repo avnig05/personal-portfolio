@@ -16,18 +16,17 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="aurora aurora-one" /><div className="aurora aurora-two" /><div className="aurora aurora-three" />
-        <div className="orb orb-one" /><div className="orb orb-two" /><div className="orb orb-three" />
+        <div className="hero-photo" aria-label="Placeholder for Avni Gandhi portrait"><span>PHOTO / 01</span><strong>Your portrait<br />goes here.</strong><small>Replace this frame with a photo of you.</small></div>
         <div className="hero-copy shell">
-          <div className="hero-kicker"><span className="pulse" /> AI systems / software / builder</div>
-          <h1><span>hello, I&apos;m</span>Avni Gandhi</h1>
-          <p>I’m Avni Gandhi — a computer engineering student building applied AI systems, developer tools, and software that helps people make better decisions.</p>
+          <div className="hero-kicker"><span className="pulse" /> Computer engineering / AI systems</div>
+          <h1><span>hello, I&apos;m</span>Avni Gandhi<svg className="name-squiggle" viewBox="0 0 620 55" role="presentation"><path d="M6 27 C 55 2, 85 52, 135 27 S 215 2, 265 27 S 345 52, 395 27 S 475 2, 525 27 S 575 45, 614 18" /></svg></h1>
+          <p>A computer engineering student building applied AI systems, developer tools, and software that helps people make better decisions.</p>
           <div className="hero-actions"><a className="primary-button" href="#work">Explore the work <span>↓</span></a><a className="quiet-link" href="#contact">Start a conversation <span>↗</span></a></div>
         </div>
         <div className="hero-coordinates">36.9741° N<br />122.0308° W</div><div className="hero-scroll">Scroll to orbit <span>↓</span></div>
       </section>
 
-      <section className="intro shell"><div className="section-label">00 / Signal</div><div><p className="intro-lead">I build at the intersection of machine learning, software infrastructure, and human-centered products.</p><p className="intro-detail">Currently studying Computer Engineering at UC Santa Cruz, with minors in Computer Science and Statistics.</p></div></section>
+      <section className="intro shell"><div className="section-label">00 / What I build</div><div><p className="intro-lead">I build at the intersection of machine learning, software infrastructure, and human-centered products.</p><p className="intro-detail">Currently studying Computer Engineering at UC Santa Cruz, with minors in Computer Science and Statistics.</p><div className="capability-grid"><div><span>01</span><h3>Applied AI</h3><p>LLM evaluation, computer vision, NLP, and systems that turn models into useful tools.</p></div><div><span>02</span><h3>Software</h3><p>FastAPI, React, Next.js, observability, and reliable infrastructure for real users.</p></div><div><span>03</span><h3>Leadership</h3><p>Cross-functional teams, clear roadmaps, and community-focused products at UCSC Blueprint.</p></div></div></div></section>
 
       <section className="section shell" id="work"><div className="section-top"><span>01 / Selected work</span><span>Proof of life</span></div><div className="project-list">{projects.map((project) => <article className="project" key={project.number}><span className="project-number">{project.number}</span><div><h2>{project.title}</h2><p>{project.description}</p><span className="project-tags">{project.tags}</span></div><span className="project-arrow">↗</span></article>)}</div></section>
 
